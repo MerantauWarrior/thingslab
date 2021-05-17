@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home - Thingslab</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</head>
+<body>
+<div class="container">
+
+  <div class="content">
+    <div class="logo"><img src="assets/imgs/logo.svg" alt="Thingslab"></div>
+    <h1 class="title">Thingslab switch configuration</h1>
+    <div class="greeting">Hello Netizen, Welcome</div>
+    <div class="controls">
+      <a href="#information" class="controls__btn js-control">Info</a>
+      <a href="#" class="controls__btn">Reset</a>
+    </div>
+    <div class="copyrights">© Copyright <span>Thingslab</span> Technologies 2021</div>
+  </div>
+
+  <div class="box">
+    <div class="config box__item" id="config">
+      <div class="config__title">QUICK CONFIGURE</div>
+      <div class="switch">
+        <a href="#tabOne" class="switch__link switch__link_active">Auto<span>matic</span></a>
+        <a href="#tabTwo" class="switch__link">Manual</a>
+      </div>
+      <div class="config__tabs">
+        <div class="config__tab config__tab_active" id="tabOne">
+          <ul class="network-list">
+            <li class="network-list__item">
+              <img src="assets/imgs/wifi.svg" alt="network name" class="network-list__icon">
+              <span class="network-list__title">Railwire</span>
+            </li>
+            <li class="network-list__item">
+              <img src="assets/imgs/wifi.svg" alt="network name" class="network-list__icon">
+              <span class="network-list__title">JioFiber-512</span>
+            </li>
+            <li class="network-list__item">
+              <img src="assets/imgs/wifi.svg" alt="network name" class="network-list__icon">
+              <span class="network-list__title">ACT-Fiber</span>
+            </li>
+            <li class="network-list__item">
+              <img src="assets/imgs/wifi.svg" alt="network name" class="network-list__icon">
+              <span class="network-list__title">SitiCable</span>
+            </li>
+            <li class="network-list__item">
+              <img src="assets/imgs/wifi.svg" alt="network name" class="network-list__icon">
+              <span class="network-list__title">Chromecast</span>
+            </li>
+            <li class="network-list__item">
+              <img src="assets/imgs/wifi.svg" alt="network name" class="network-list__icon">
+              <span class="network-list__title">Giganet 47</span>
+            </li>
+          </ul>
+        </div>
+        <div class="config__tab" id="tabTwo">
+          <form action="" method="get" autocomplete="off">
+            <div class="form-field">
+              <label for="ssid" class="label">SSID</label>
+              <input type="text" name="ssid" id="ssid" class="inp" placeholder="Placeholder" required>
+            </div>
+            <div class="form-field">
+              <label for="pwd" class="label">Password</label>
+              <div class="password">
+                <input type="password" name="pwd" id="pwd" class="inp" placeholder="Placeholder" required>
+                <span class="password__show">show</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <a href="#" class="box-action">CONNECT</a>
+    </div>
+    <div class="information box__item" id="information">
+      <div class="information__title">INFO</div>
+      <ul class="information-list">
+        <li class="information-list__item">
+          <div class="label">SSID</div>
+          <div class="information-list__value">Railwire</div>
+        </li>
+        <li class="information-list__item">
+          <div class="label">Protocol</div>
+          <div class="information-list__value">Wi-Fi 4 (802.11n)</div>
+        </li>
+        <li class="information-list__item">
+          <div class="label">Security type</div>
+          <div class="information-list__value">WPA2-Personal</div>
+        </li>
+        <li class="information-list__item">
+          <div class="label">Network band</div>
+          <div class="information-list__value">2.4 GHz</div>
+        </li>
+        <li class="information-list__item">
+          <div class="label">Physical address (MAC)</div>
+          <div class="information-list__value">A0-AG-BD-A4-07-FC</div>
+        </li>
+        <li class="information-list__item">
+          <div class="label">IPv4 address</div>
+          <div class="information-list__value">192.168.43.176</div>
+        </li>
+        <li class="information-list__item">
+          <div class="label">IPv6 address</div>
+          <div class="information-list__value">2409:7842:710:21df:59a8:b237:886f:933f</div>
+        </li>
+      </ul>
+      <a href="#config" class="box-action js-control">BACK</a>
+    </div>
+    <div class="modal">
+      <div class="modal-window">
+        <div class="modal__network">
+          <img src="assets/imgs/wifi-modal.svg" alt="network-name" class="modal__network-icon">
+          <span class="modal__network-name">Railwire</span>
+        </div>
+        <form action="" method="get" autocomplete="off">
+          <div class="modal__form-field">
+            <label for="modal-pwd" class="modal__label">Password</label>
+            <div class="password">
+              <input type="password" name="modal-pwd" id="modal-pwd" class="inp" placeholder="Placeholder" required>
+              <span class="password__show">show</span>
+            </div>
+          </div>
+          <div class="modal__form-btns">
+            <a href="#" class="modal__form-btn modal__form-btn-cancel">cancel</a>
+            <button class="modal__form-btn modal__form-btn-connect" type="submit">connect</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
